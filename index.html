@@ -1,151 +1,220 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <title> <img src="images/" alt=""> Shop Online</title>
-        <link rel="stylesheet" href="style.css">
-        <title>Shop Bán hàng</title>
-    </head>
-    <body>
-        <div id="website">
-            <!--Phan top website-->
-            <div id="top">
-                <div id="top_left">
-                    <a href="https://www.google.com/"><img width="20" height="20" src="images/google.jpg"/></a>
-                    <a href="#"><img width="20" height="20" src="images/gmail.png"/></a>
-                    <a href="#"><img width="20" height="20" src="images/facebook.png"/></a>
-                </div>
-                <div id="top_right">
-                    <ul>
-                    <li><a href="#">Đăng nhập</a></li>
-                    <li>|</li>
-                    <li><a href="#">Đăng ký</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- PHẦN HEADER WEBSITE-->
-            <div id="header">
-                <!-- div thứ 1: hình logo -->
-                <div style="float:left; width:500px; height:100px;
-                        margin:15px 0 0 50px; border:0px solid #000">
-                    <img src="images/logoshop.jpg" width="500" height="100">
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>New Vision HTML CSS Template</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" /> <!-- https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans -->
+    <link href="css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
+    <link href="slick/slick.css" rel="stylesheet" /> <!-- https://kenwheeler.github.io/slick/ -->
+    <link href="slick/slick-theme.css" rel="stylesheet" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com -->
+	<link href="css/templatemo-new-vision.css" rel="stylesheet" />
+<!--
 
+New Vision Template
 
-                <!-- div thứ 2: giỏ hành và thông tin giỏ hàng -->
-                <div style="float:right; width:400px; height:67px; border:0px solid #000">
-                    <div id="shopcart">
-                        <img src="images/giohang.png" style="width: 71px;"/>
-                        <div id="info_cart">
-                            <p>0 sản phẩm</p>
-                            <p>0 đ</p>
-                        </div>
+https://templatemo.com/tm-542-new-vision
+
+-->
+</head>
+<body>
+    <!-- Page Header -->
+    <div class="container-fluid">
+        <div class="tm-site-header">
+            <div class="row">
+                <div class="col-12 tm-site-header-col">
+                    <div class="tm-site-header-left">
+                        <i class="far fa-2x fa-eye tm-site-icon"></i>
+                        <h1 class="tm-site-name">New Vision</h1>
                     </div>
-                </div>
-
-                <!-- div thứ 3: số điện thoại và tìm kiếm -->
-                <div style="float:right; width:400px; height:60px; border:0px solid #000">
-                        <div id="phone_search" style="float:right; width:400px; height:60px;
-                                   border:0px solid #000">
-                            <div id="header_phone"><img src="images/call.jpg" style="width: 28px;"/>Support: 0703123456</div>
-                            <div id="header_search">
-                                <!-- Tạo form tìm kiếm-->
-                                <form id="search_form">
-                                    <input type="text" id="txtsearch" placeholder="Search for here..."/>
-                                    <button type="submit" id="btnsearch"><img src="images/find.jpg" style="width: 30px;"></button>
-                                </form>
-                            </div>
-                        </div>
-                </div>
-            </div>
-            <!-- PHẦN MENU -->
-            <div id="menu">
-                <ul>
-                    <img width="40" height="35" src="images/home.png">
-                    <li style="border-left: 1px dotted#999;"><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Giới thiệu</a></li>
-                    <li><a href="#">Thời Trang Nam</a></li>
-                    <li><a href="#">Thời Trang Nữ</a></li>
-                    <li><a href="#">Hướng dẫn mua hàng</a></li>
-                    <li><a href="#">Liên hệ</a></li>
-                    <li><a href="#">Trợ giúp</a></li>
-                    </ul>
-
-            </div>
-                             <!-- PHẦN MAIN-->
-            <div id="main">
-                <div id="main_left">
-                    <div id="menu_left">
-                        <ul>
-                            <li><a href="#">Quần áo nữ</a>
-                            <ul class="submenu">
-                            <li><a href="#">Áo thun nữ</a>
-                            <li><a href="#">Áo sơ mi nữ</a>
-                            <li><a href="#">Áo khoát, vest nữ</a>
-                            <li><a href="#">Váy đầm</a>
-                            <li><a href="#">Quần jean</a>
+                    <div class="tm-site-header-right tm-menu-container-outer">
+                        
+                        <!--Navbar-->
+                        <nav class="navbar navbar-expand-lg">
+                        
+                          <!-- Collapse button -->
+                          <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                            aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                                class="fas fa-bars fa-1x"></i></span></button>
+                        
+                          <!-- Collapsible content -->
+                          <div class="collapse navbar-collapse tm-nav" id="navbarSupportedContent1">
+                        
+                            <!-- Links -->
+                            <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                <a class="nav-link tm-nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link tm-nav-link" href="company.html">Our Company</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link tm-nav-link" href="services.html">Services</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
+                              </li>
                             </ul>
-                            </li>
-                            <li><a href="#">Giày dép nữ</a>
-                            <ul class="submenu">
-                            <li><a href="#">Giày cao gót</a>
-                            <li><a href="#">Giày búp bê</a>
-                            <li><a href="#">Giày sandal nữ</a>
-                            <li><a href="#">Giày bata nữ</a>
-                            <li><a href="#">Giày thể thao nữ</a>
-                            </ul>
-                            </li>
-                            </ul>
+                            <!-- Links -->
+                        
+                          </div>
+                          <!-- Collapsible content -->
+                        
+                        </nav>
+                        <!--/.Navbar-->
                     </div>
-                </div>
-                <div id="main_right">
-                    <div id="products"> <!-- # khung main-right -->
-                        <ul>
-                            <li> <!-- 230,340 -->
-                                <div class="content"> <!-- 210,320 -->
-                                    <img src="images/products/hinh1.png" width="210" height="280" /> <!-- 210,280 -->
-                                    <p class="title">Áo thun kẻ sọc xanh trắng</p>
-                                    <p class="price">250.000đ</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content">
-                                    <img src="images/products/hinh2.jpg" width="210" height="280"/>
-                                    <p class="title">Váy ngắn</p>
-                                    <p class="price">200.000đ</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content">
-                                    <img src="images/products/hinh7.jpg" width="210" height="280"/>
-                                    <p class="title">Áo thun nữ thủy hử in mèo</p>
-                                    <p class="price">240.000đ</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content">
-                                    <img src="images/products/hinh5.jpg" width="210" height="280"/>
-                                    <p class="title">Áo thun Hoodie khủng long</p>
-                                    <p class="price">245.000đ</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content">
-                                    <img src="images/products/hinh6.jpg" width="210" height="280"/>
-                                    <p class="title">Áo Hoodie phân màu đen trắng</p>
-                                    <p class="price">290.000đ</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content">
-                                    <img src="images/products/hinh8.jpg" width="210" height="280"/>
-                                    <p class="title">Áo sơ mi nón nữ in mèo</p>
-                                    <p class="price">185.000đ</p>
-                                </div>
-                            </li>
-                        </ul>
                 </div>
             </div>
         </div>
-    </body>
+        
+        <div class="row">
+            <div class="col-12">
+                <div class="tm-main-bg"></div>        
+            </div>
+        </div>
+        
+        <!-- Main -->
+        <main>
+            <!-- Welcome section -->
+            <section class="tm-welcome">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="tm-section-header tm-header-floating">Welcome to NguyenTuanKiet</h2>         
+                    </div>
+                </div>
+                
+                <div class="row tm-welcome-row">
+                    <article class="col-lg-6 tm-media">
+                        <img src="img/img-3x2-01.jpg" alt="Welcome image" class="img-fluid tm-media-img" />
+                        <div class="tm-media-body">
+                            <a href="#" class="tm-article-link"><h3 class="tm-article-title text-uppercase">Best collection</h3></a>
+                            <p>Aliquam purus arcu, congue a gravida ac, facilisis vel erat. Maecenas pretium sem.</p>
+                        </div>
+                    </article>
+                    <article class="col-lg-6 tm-media">
+                        <img src="img/img-3x2-02.jpg" alt="Welcome image" class="img-fluid tm-media-img" />
+                        <div class="tm-media-body">
+                            <a href="#" class="tm-article-link"><h3 class="tm-article-title text-uppercase">Thiết kệ mới cho trang web của bạn</h3></a>
+                            <p>Aliquam purus arcu, congue a gravida ac, facilisis vel erat. Maecenas pretium sem at nisl malesuada, quis.</p>
+                        </div>
+                    </article>
+                    <article class="col-lg-6 tm-media">
+                        <img src="img/img-3x2-03.jpg" alt="Welcome image" class="img-fluid tm-media-img" />
+                        <div class="tm-media-body">
+                            <a href="#" class="tm-article-link"><h3 class="tm-article-title text-uppercase">Most unique idea ever made</h3></a>
+                            <p>Aliquam purus arcu, congue a gravida ac, facilisis vel erat. Maecenas. <span class="tm-hover-color">Hover #09F</span></p>
+                        </div>
+                    </article>
+                    <article class="col-lg-6 tm-media">
+                        <img src="img/img-3x2-04.jpg" alt="Welcome image" class="img-fluid tm-media-img" />
+                        <div class="tm-media-body">
+                            <a href="#" class="tm-article-link"><h3 class="tm-article-title text-uppercase">Simple touch</h3></a>
+                            <p>Please tell your friends about TemplateMo website. Thank you. Title / Text #666</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="row tm-welcome-row-2">
+                    <div class="col-lg-4 tm-dotted-box-container">
+                        <article class="tm-dotted-box">
+                            <i class="fas fa-3x fa-binoculars tm-article-icon"></i>
+                            <h3 class="tm-article-title">Template Usage</h3>
+                            <p class="tm-article-text">You can feel free to edit and use New Vision template for your commercial websites. Title color is #333</p>
+                            <a class="tm-btn tm-btn-rounded tm-article-link" href="#">More Details</a>
+                        </article>    
+                    </div>
+                    <div class="col-lg-4 tm-dotted-box-container">
+                        <article class="tm-dotted-box">
+                            <i class="fas fa-3x fa-microscope tm-article-icon"></i>
+                            <h3 class="tm-article-title">New Vision</h3>
+                            <p class="tm-article-text"><a rel="nofollow" target="_parent" href="https://templatemo.com/tm-542-new-vision">New Vision</a> comes with 4 different HTML pages and provided free of charge by TemplateMo. You can add more pages if you need. Text color is #666</p>
+                        </article>    
+                    </div>
+                    <div class="col-lg-4 tm-dotted-box-container">
+                        <article class="tm-dotted-box">
+                            <i class="fas fa-3x fa-glasses tm-article-icon"></i>
+                            <h3 class="tm-article-title">Download Sites</h3>
+                            <p class="tm-article-text">Do not re-distribute our template ZIP file on your website. Or contact us first. Button color is #C99</p>
+                            <a class="tm-btn tm-article-link" href="#">Read More...</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Featured -->
+            <section class="tm-featured">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="tm-section-header tm-section-header-small">Featured Carousel Items</h2>        
+                    </div>
+                </div>
+                
+                <!-- Carousel -->
+                <div class="grid tm-carousel">
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-01.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Best</span> HTML Template</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-02.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Top</span> CSS Theme</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-03.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Best</span> HTML Template</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-04.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Great</span> Web Theme</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-05.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Best</span> HTML Collection</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-06.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Max</span> CSS Layout</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-07.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Best</span> HTML Layout</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-08.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Best</span> CSS Template</i></h4>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            
+            <footer>
+                Copyright &copy; 2020 New Vision - Design: <a href="https://templatemo.com">TemplateMo</a>
+            </footer>
+            
+        </main>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
 </html>
